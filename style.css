@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5fcff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  margin-top: 20px;
+  border: 2px solid #333;
+}
+.row {
+  display: flex;
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  box-sizing: border-box;
+  outline: none;
+}
+/* تمييز المربعات 3x3 */
+.row:nth-child(3n) {
+  border-bottom: 2px solid #333;
+}
+.cell:nth-child(3n) {
+  border-right: 2px solid #333;
+}
+
+.fixed-cell {
+  background-color: #e8e8e8;
+  font-weight: bold;
+  color: #333;
+}
+.user-cell {
+  background-color: #fff;
+  color: #007bff;
+}
+.invalid {
+  color: red !important;
+  background-color: #ffe6e6;
+}
+
+.controls {
+  margin-top: 20px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-easy {
+  background-color: #28a745;
+  color: white;
+}
+.btn-medium {
+  background-color: #ffc107;
+  color: black;
+}
+.btn-hard {
+  background-color: #dc3545;
+  color: white;
+}
+.btn-action {
+  background-color: #007bff;
+  color: white;
+}
+button:hover {
+  opacity: 0.8;
+}
+.status {
+  margin-top: 15px;
+  font-weight: bold;
+  height: 20px;
+}

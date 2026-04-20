@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku Master</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Sudoku Game</h2>
+
+    <div class="controls">
+      <button class="btn-easy" onclick="startGame('easy')">Easy</button>
+      <button class="btn-medium" onclick="startGame('medium')">Medium</button>
+      <button class="btn-hard" onclick="startGame('hard')">Hard</button>
+    </div>
+
+    <div class="container" id="container"></div>
+
+    <div class="status" id="status"></div>
+
+    <div class="controls">
+      <button class="btn-action" id="solveButton">Show Solution</button>
+      <button class="btn-action" id="newGameButton">
+        New Game (Current Level)
+      </button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
